@@ -44,8 +44,8 @@ Output: [0,1]
 
 I will be going over two solutions: ***brute force solution*** and ***optimized solution***
 
-##  Brute Force Solution
-I mostly start out with a brute force solution for every problem, then work my way through optimizing it. There is a saying  "*Every good programmer should be able to come up with a brute force approach to a difficult problem*". 
+##  Brute-Force Solution
+I mostly start out with a brute-force solution for every problem, then work my way through optimizing it. There is a saying  "*Every good programmer should be able to come up with a brute-force approach to a difficult problem*". 
 
 #### Approach
 In this approach, for every element in the array we take a subarray that doesn't contain the current element, then check for the element in this subarray that when added to the current element sums up to the target, then we return our result. This approach is fairly intuitive and we are assured that each test case has a solution.
