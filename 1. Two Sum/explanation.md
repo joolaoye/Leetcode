@@ -70,7 +70,7 @@ In this approach, for every element in the array we take a subarray that doesn't
             * if step4 is true, populate the result array witht the indices of both elements then return the result
 
             ``` result_array = {i,j}```
-            
+
             ```return result_array```
 
 ### Worst-Case Complexity Analysis
@@ -100,7 +100,7 @@ This optimized approach is similar to the initial approach but leverages memoiza
 ```result_array = empty array of size 2```
 * Create an hashmap equivalent in your language 
 
-``` Python: hashmap = dict()```
+``` Python: hashmap = {}```
 
 ``` C++: unordered_map<int, int> hashmap;```
 * Iterate over each element of the input array

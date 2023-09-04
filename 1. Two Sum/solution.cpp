@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Brute Force Approach
+// Brute-Force Solution
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -17,7 +17,7 @@ public:
     }
 };
 
-// Optimized solution
+// Optimized Solution
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {

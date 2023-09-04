@@ -10,8 +10,6 @@ class Solution(object):
             for j in range(i + 1, len(nums)):
                 if nums[i] + nums[j] == target:
                     return [i,j]
-        
-        return [-1, -1]
 
 # Optimized solution
 class Solution(object):
@@ -27,4 +25,3 @@ class Solution(object):
             if target - val in hashmap:
                 return [hashmap[target - val], index]
             hashmap[val] = index
-        return [-1, -1]
