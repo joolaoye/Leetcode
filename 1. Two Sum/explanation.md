@@ -110,13 +110,12 @@ This optimized approach is similar to the initial approach but leverages memoiza
         * If step5 is true, retrieve the index of the complementary element from the hashmap
             ``` Python: i = hashmap[diff] ```
 
-           ``` C++: i = hashmap[diff] ```
+            ``` C++: i = hashmap[diff] ```
 
-* Populate the result array witht the indices of both elements then return the result
-            ```
-            result_array = {i, j}
-            return result_array
-            ```
+            * Populate the result array witht the indices of both elements then return the result
+            ```result_array = {i, j}```
+
+            ```return result_array```
 
 ### Worst-Case Complexity Analysis
 **Time Complexity:** Given an input array of size n, we iterate over the array n times. For each iteration, we compute the difference of the target value and the current element, then we check if this difference is in our hashmap, hashmap has a constant lookup time as well as subtraction on standard sized integers, so thats O(2) in the inner loop, putting together, O(2n), which simplifies to O(n) since n is the most significant term. Therefore, this algorithm is bounded by O(n) time.
