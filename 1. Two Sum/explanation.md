@@ -51,14 +51,22 @@ I mostly start out with a brute force solution for every problem, then work my w
 In this approach, for every element in the array we take a subarray that doesn't contain the current element, then check for the element in this subarray that when added to the current element sums up to the target, then we return our result. This approach is fairly intuitive and we are assured that each test case has a solution.
 
 ### Algorithm
-* Create an empty result array of size 2 
+* Create an empty result array of size 2
+
 ```result_array = empty array of size 2```
+
 * Iterate over each element of the input array
-``` for i from 0 to length(input_array) - 1```
-    * For each element visited, iterate over the array again excluding the current element.
-    ``` for j from 0 to length(input_array) - 1 and j != i```
-        * Check if the current pair of elements adds up to the targe
-        ``` if input_array[i] + input_array[j] == target```
+
+    ``` for i from 0 to length(input_array) - 1```
+
+    * For each element visited, iterate over the array again excluding the current element
+
+        ``` for j from 0 to length(input_array) - 1 and j != i```
+
+        * Check if the current pair of elements adds up to the target
+
+            ``` if input_array[i] + input_array[j] == target```
+
             * if step4 is true, populate the result array witht the indices of both elements then return the result
             ``` result_array = {i,j}```
             ```return result_array```
@@ -92,21 +100,23 @@ This optimized approach is similar to the initial approach but leverages memoiza
 
 ``` C++: unordered_map<int, int> hashmap;```
 * Iterate over each element of the input array
-``` for i from 0 to length(input_array) - 1```
+    ``` for i from 0 to length(input_array) - 1```
     * Calculate the difference between the target value and the current element
     ```diff = target - input_array[i]```
     * Check if the difference exists in our hashmap
-        ```Python: if diff in hashmap```
+        ``` Python: if diff in hashmap ```
+        
+        ``` C++: if (hashmap.find(diff) != hashmap.end()) ```
+        * If step5 is true, retrieve the index of the complementary element from the hashmap
+            ``` Python: i = hashmap[diff] ```
 
-        ```C++: if (hashmap.find(diff) != hashmap.end())```
-* If step5 is true, retrieve the index of the complementary element from the hashmap
-            ```Python: i = hashmap[diff]```
+           ``` C++: i = hashmap[diff] ```
 
-            ```C++: i = hashmap[diff]```
 * Populate the result array witht the indices of both elements then return the result
-            ```result_array = {i, j}```
-
-            ```return result_array```
+            ```
+            result_array = {i, j}
+            return result_array
+            ```
 
 ### Worst-Case Complexity Analysis
 **Time Complexity:** Given an input array of size n, we iterate over the array n times. For each iteration, we compute the difference of the target value and the current element, then we check if this difference is in our hashmap, hashmap has a constant lookup time as well as subtraction on standard sized integers, so thats O(2) in the inner loop, putting together, O(2n), which simplifies to O(n) since n is the most significant term. Therefore, this algorithm is bounded by O(n) time.
