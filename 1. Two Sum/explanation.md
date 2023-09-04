@@ -99,13 +99,13 @@ This optimized approach is similar to the initial approach but leverages memoiza
         ```Python: if diff in hashmap```
 
         ```C++: if (hashmap.find(diff) != hashmap.end())```
-            *If step5 is true, retrieve the index of the complementary element from the hashmap
+* If step5 is true, retrieve the index of the complementary element from the hashmap
             ```Python: i = hashmap[diff]```
 
             ```C++: i = hashmap[diff]```
-            * Populate the result array witht the indices of both elements then return the result
+* Populate the result array witht the indices of both elements then return the result
             ```result_array = {i, j}```
-            
+
             ```return result_array```
 
 ### Worst-Case Complexity Analysis
