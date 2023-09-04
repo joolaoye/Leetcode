@@ -89,6 +89,7 @@ This optimized approach is similar to the initial approach but leverages memoiza
 ```result_array = empty array of size 2```
 * Create an hashmap equivalent in your language 
 ``` Python: hashmap = dict()```
+
 ``` C++: unordered_map<int, int> hashmap;```
 * Iterate over each element of the input array
 ``` for i from 0 to length(input_array) - 1```
@@ -96,12 +97,15 @@ This optimized approach is similar to the initial approach but leverages memoiza
     ```diff = target - input_array[i]```
     * Check if the difference exists in our hashmap
         ```Python: if diff in hashmap```
+
         ```C++: if (hashmap.find(diff) != hashmap.end())```
             *If step5 is true, retrieve the index of the complementary element from the hashmap
             ```Python: i = hashmap[diff]```
+
             ```C++: i = hashmap[diff]```
             * Populate the result array witht the indices of both elements then return the result
             ```result_array = {i, j}```
+            
             ```return result_array```
 
 ### Worst-Case Complexity Analysis
