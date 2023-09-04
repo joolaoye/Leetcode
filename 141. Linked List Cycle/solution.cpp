@@ -30,7 +30,7 @@ public:
     }
 };
 
-// Floyd-Warshall Algorithm
+// Floyd-Cycle Detection Algorithm
 class Solution {
 public:
     bool hasCycle(ListNode *head) {

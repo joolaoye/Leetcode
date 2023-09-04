@@ -23,7 +23,7 @@ class Solution(object):
         
         return False
 
-# Floyd-Warshal Algorithm    
+# Floyd-Cycle Detection Algorithm    
 class Solution(object):
     def hasCycle(self, head):
         """

@@ -9,7 +9,7 @@
 #define true 1
 #define false 0
 
-// Floyd-Warshall Algorithm
+// Floyd-Cycle Detection Algorithm
 bool hasCycle(struct ListNode *head) {
     struct ListNode* fast = head;
     struct ListNode* slow = head;
