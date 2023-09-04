@@ -68,7 +68,9 @@ In this approach, for every element in the array we take a subarray that doesn't
             ``` if input_array[i] + input_array[j] == target```
 
             * if step4 is true, populate the result array witht the indices of both elements then return the result
+
             ``` result_array = {i,j}```
+            
             ```return result_array```
 
 ### Worst-Case Complexity Analysis
@@ -94,25 +96,32 @@ This optimized approach is similar to the initial approach but leverages memoiza
 
 ### Algorithm
 * Create an empty result array of size 2 
+
 ```result_array = empty array of size 2```
 * Create an hashmap equivalent in your language 
+
 ``` Python: hashmap = dict()```
 
 ``` C++: unordered_map<int, int> hashmap;```
 * Iterate over each element of the input array
+
     ``` for i from 0 to length(input_array) - 1```
     * Calculate the difference between the target value and the current element
+
     ```diff = target - input_array[i]```
     * Check if the difference exists in our hashmap
+
         ``` Python: if diff in hashmap ```
         
         ``` C++: if (hashmap.find(diff) != hashmap.end()) ```
         * If step5 is true, retrieve the index of the complementary element from the hashmap
+
             ``` Python: i = hashmap[diff] ```
 
             ``` C++: i = hashmap[diff] ```
 
             * Populate the result array witht the indices of both elements then return the result
+
             ```result_array = {i, j}```
 
             ```return result_array```
