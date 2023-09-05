@@ -78,7 +78,7 @@ In this approach, for every element in the array we take a subarray that doesn't
             ```return result_array```
 
 ### Worst-Case Complexity Analysis
-**Time Complexity:** Given an input array of size ```n```, we iterate over the array ```n``` times in the outer loop. For each iteration of the outer loop, we iterate over the array ```n - 1``` times in the inner loop, excluding the current element. This results in a total of ```n * (n - 1)``` operations. When we consider the most significant term, this simplifies to ```O(n<sup>2</sup>)```. Therefore, this algorithm is bounded by ```O(n<sup>2</sup>)``` time.
+**Time Complexity:** Given an input array of size ```n```, we iterate over the array ```n``` times in the outer loop. For each iteration of the outer loop, we iterate over the array ```n - 1``` times in the inner loop, excluding the current element. This results in a total of ```n * (n - 1)``` operations. When we consider the most significant term, this simplifies to ```O(n^2)```. Therefore, this algorithm is bounded by ```O(n^2)``` time.
 
 **Space Complexity:** Fortunately, the space complexity of this algorithm does not scale with the input size. The only additional space used is for the result array, which has a fixed size of 2 elements. In Big O notation, we classify this as constant space complexity, denoted as ```O(1)```. Therefore, this algorithm is bounded by ```O(1)``` space.
 
