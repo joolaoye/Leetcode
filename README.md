@@ -8,7 +8,7 @@
 ## Array
 | # | Title | Solution | Difficulty | Explanation |
 |---| ----- | -------- | ---------- | ---------- |
-|0001|[Two Sum](https://leetcode.com/problems/two-sum) | [C++](https://github.com/joolaoye/Leetcode/blob/main/0001.%20Two%20Sum/solution.cpp) . [Python](https://github.com/joolaoye/Leetcode/blob/main/0001.%20Two%20Sum/solution.py)| Easy | [Explanation](https://github.com/joolaoye/Leetcode/blob/main/0001.%20Two%20Sum/explanation.md) |
+|0001|[Two Sum](https://leetcode.com/problems/two-sum) | [C++](https://github.com/joolaoye/Leetcode/blob/main/0001.%20Two%20Sum/solution.cpp) . [Python](https://github.com/joolaoye/Leetcode/blob/main/0001.%20Two%20Sum/solution.py) . Javascript | Easy | [Explanation](https://github.com/joolaoye/Leetcode/blob/main/0001.%20Two%20Sum/explanation.md) |
 |0004|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Python | Hard | Explanation |
 |0011|[Container With Most Water](https://leetcode.com/problems/container-with-most-water) | C++ . Python | Medium | Explanation |
 |0026|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Python | Easy | Explanation |
