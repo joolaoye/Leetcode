@@ -2,7 +2,7 @@
 
 class Solution {
 public:
-    int searchInsert(vector<int>& nums, int target) {
+    int searchInsert(std::vector<int>& nums, int target) {
         int l = 0;
         int r = nums.size() - 1;
 
